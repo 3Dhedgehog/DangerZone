@@ -17,7 +17,7 @@ Nasza aplikacja nie powstałaby bez kilku bibliotek, które nie są naszą włas
  - Mappa.js 
  - p5 
 
-Aplikacja wykorzystuje najnowsze standardy webowe (HTML5: element canvas, geolokalizacja, itp., CSS3: przejścia, model Flexbox, itp., JavaScript) - frontend, oraz Pythona i micro-framework Flask – backend. 
+Aplikacja wykorzystuje najnowsze standardy webowe (HTML5: element canvas, geolokalizacja, itp., CSS3: przejścia, model Flexbox, itp., JavaScript) - frontend, oraz Pythona i micro-framework Flask – backend. Staraliśmy się uwzględnić responsywność strony - aby równie dobrze prezentowała się na urządzeniach mobilnych (na których najprawdopodobniej przede wszystkim będzie używana) i w przeglądarkach desktopowych. 
 
 Niektórych pomysłów nie zdążyliśmy zrealizować w czasie przeznaczonym na hackaton, niemniej zamierzamy dodać je w późniejszym czasie, aby usprawnić pracę aplikacji. Są to m.in.: 
 
