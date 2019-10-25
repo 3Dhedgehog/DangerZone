@@ -1,7 +1,7 @@
 # DangerZone
 Aplikacja stworzona na Hack Heroes 2019
 
-DangerZone to mapa zagrożeń uaktualniana online w czasie rzeczywistym. Zasada jej działania jest bardzo prosta. Aplikacja pobiera dane o zagrożeniach w pięciu kategoriach (epidemie, katastrofy naturalne, zmasowane ataki terrorystyczne, działania zbrojne, zanieczyszczenia środowiska) i wyświetla je na mapie. Zagrożenia można również zgłaszać. W tym celu należy rozwinąć menu, gdzie - jeśli użytkownik zezwolił na pobranie lokalizacji - powinny się już pojawić jego współrzędne. Użytkownik ma możliwość wybrania kategorii do jakiej należy zagrożenie i zgłoszenia go. Nowe zagrożenie zostaje dodane do bazy danych i wyświetlone przy następnym odświeżeniu strony. 
+DangerZone to mapa zagrożeń uaktualniana online w czasie rzeczywistym. Zasada jej działania jest bardzo prosta. Aplikacja pobiera z bazy danych dane o zagrożeniach w pięciu kategoriach (epidemie, katastrofy naturalne, zmasowane ataki terrorystyczne, działania zbrojne, zanieczyszczenia środowiska) i wyświetla je na mapie. W celach prezentacyjnych dane są wygenerowane losowo, jednak docelowo baza będzie wypełniana danymi pochodzącymi od użytkowników. Aby zgłosić zagrożenie, należy rozwinąć menu, gdzie - jeśli użytkownik zezwolił na pobranie lokalizacji - powinny się już pojawić jego współrzędne. Użytkownik ma możliwość wybrania kategorii do jakiej należy zagrożenie i zgłoszenia go. Nowe zagrożenie zostaje dodane do bazy danych i wyświetlone przy następnym odświeżeniu strony. 
 
  - Aplikacja może okazać się przydatna na wielu polach: 
  - Łatwiejsze utrzymanie kwarantanny. 
