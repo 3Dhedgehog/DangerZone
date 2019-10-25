@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	
+	<title>About &#124; DangerZone</title>
+	
+	
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style-about.css') }}">
+	<link rel="icon" href="{{ url_for('static', filename='img/punctor.png') }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
+</head>
+
+<body>
+	<div id="content">
+		<div id="main-container">
+			<header>
+				<a href="{{ url_for('index') }}" id="img-logo"><img src="{{ url_for('static', filename='img/danger-zone-logo-test2.png')}}" alt="DangerZone logo"></a>
+				<div id="h1-container">
+				<h1>DangerZone</h1>
+				</div>
+			</header>
+		<main>
+			<!-- main section -->
+
+			<!-- about app -->
+			<h2>What's DangerZone?</h2>
+
+			<!-- about section -->
+			<p>Our app is the answer to global issues like epidemics, natural disasters, saturation, terrorist attacks,
+				etc. It allows the community to mark places as dangerous, so you can avoid them. Don&#8217;t waste your
+				time and <a href="{{ url_for('index') }}">try DangerZone</a> for free. </p>
+
+			<!-- instructions for use -->
+			<h2>How to use it?</h2>
+			<p>You just have to enable geolocalisation and check the map. It's that simple! Dangerous places are grouped in following categories:</p>
+
+
+			<!-- categories of dangers -->
+			<h3>Categories</h3>
+			<ul id="categories">
+				<li id="catEpidemics" title="Epidemics, ilnesses...">
+					<p>Epidemics</p>
+				</li>
+				<li id="catTerrorists" title="Concentrated terrorists attacks...">
+					<p>Saturation terrorist attacks</p>
+				</li>
+				<li id="catDiseasters" title="Natural disasters, fires, floods...">
+					<p>Natural disasters</p>
+				</li>
+				<li id="catPollutions" title="Environmental pollutions, radioactive pollutions...">
+					<p>Environmental pollutions</p>
+				</li>
+				<li id="catWars" title="Wars, concentrated armed operations...">
+					<p>Wars</p>
+				</li>
+			</ul>
+
+		</main>
+		</div>
+		<footer>
+			<!-- footer section -->
+			<p>DangerZone v0.1 <span id="tagBeta">pre-alfa</span></p>
+			<p>Created by Jakub Kornacki &#38; Jerzy Kaczorowski</p>
+		</footer>
+	</div>
+</body>
+</html>

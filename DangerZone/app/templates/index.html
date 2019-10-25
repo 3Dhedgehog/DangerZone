@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Main &#124; DangerZone</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style-app.css') }}">
+	<link rel="icon" href="{{ url_for('static', filename='img/punctor.png') }}">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+	<script src="{{ url_for('static', filename='js/lib/p5.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/lib/mappa.js') }}"></script>
+
+
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+	{% for danger in data %}
+	<script src="{{ url_for('static', filename='js/load-data.js') }}" x={{ danger.x }} y={{ danger.y}} 
+		category={{ danger.category }}></script>
+	{% endfor %}
+
+
+</head>
+
+<body>
+	<div id="content">
+
+		<main>
+			<ul class="small-menu" id="small-menu-down">
+				<li id="menu-icon-down" class="li-menu-styles">
+					<p id="menu-down" class="menu-icons-bg">&#9662;</p>
+				</li>
+				<li><a href="{{ url_for('about') }}" class="menu-icon-about li-menu-styles">
+						<p class="menu-icons-bg">?</p>
+					</a></li>
+			</ul>
+			<div id="menu">
+				<form id="main-menu" action="" method="POST">
+					{{ form.hidden_tag() }}
+					<ul class="small-menu" id="small-menu-up">
+						<li id="menu-icon-up" class="li-menu-styles">
+							<p id="menu-up" class="menu-icons-bg">&#9652;</p>
+						</li>
+						<li><a href="{{ url_for('about') }}" class="menu-icon-about li-menu-styles">
+								<p class="menu-icons-bg">?</p>
+							</a></li>
+					</ul>
+					<div>
+
+						<p>
+							{{ form.category() }}
+						</p>
+						<p>
+							{{ form.x_coordinate() }}
+						</p>
+						<p>
+							{{ form.y_coordinate() }}
+						</p>
+						<p>
+							{{ form.submit() }}
+						</p>
+					</div>
+				</form>
+			</div>
+			<div id="mapDiv">
+				<!-- canvas space -->
+			</div>
+
+		</main>
+
+		<footer>
+			<p>DangerZone v0.1 <span id="tagBeta">pre-alfa</span></p>
+			<p>Created by Jakub Kornacki &#38; Jerzy Kaczorowski</p>
+		</footer>
+	</div>
+	<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+</body>
+
+</html>

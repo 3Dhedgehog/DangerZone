@@ -1,0 +1,106 @@
+/* 
+style block schemat 
+ - display
+ - positoning
+ - dimensions
+ - color, background
+ - font properties
+ - text propetries
+ - border
+ - others
+ - transitions*/
+
+#content {
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	height: 100%;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+	border: none;
+	box-shadow: none;
+}
+
+#mapDiv {
+	margin: 25px;
+	margin-top: 80px;
+	box-shadow: 5px 5px 5px #e6e6e6;
+	
+}
+
+#small-menu-down,  #small-menu-up {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	padding-left: 15px;	
+}
+
+#small-menu-down {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+
+.small-menu li {
+	display: inline-block;
+}
+
+.li-menu-styles {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	background-image: url('/static/img/menu-home.png');
+}
+
+#menu-icon-down {
+	background-image: url('/static/img/menu-down.png');
+}
+
+#menu-icon-up {
+	background-image: url('/static/img/menu-up.png');
+}
+
+.menu-icons-bg {
+	display: none;
+}
+
+#menu {
+	position: fixed;
+	z-index: 999999;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* footer section styles */
+
+footer {
+	margin-bottom: 25px;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #b3b3b3;
+}
+
+footer p {
+	text-align: center;
+}
+
+#tagBeta {
+	padding: 5px;
+	color: #f00;
+	font-style: normal;
+	font-variant: small-caps;
+	border: 1px solid #f00;
+	border-radius: 10px;	
+}

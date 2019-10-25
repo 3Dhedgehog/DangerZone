@@ -1,0 +1,145 @@
+/* 
+style block schemat 
+ - display
+ - positoning
+ - dimensions
+ - color, background
+ - font properties
+ - text propetries
+ - border
+ - others
+ - transitions
+*/
+
+#content {
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	margin: 0 15% 0 15%;
+}
+
+/* general HTML tags styles */
+#main-container {
+	padding: 15px;
+	background-color: rgba(230, 230, 230, 0.5);
+	border: 1px solid rgba(230, 230, 230, 0.5);
+	border-top-style: none;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 5px 5px 5px #e6e6e6;
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+#h1-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+a {
+	color: #000;
+}
+
+/* footer section styles */
+
+footer {
+	font-style: italic;
+	font-size: 0.9em;
+	color: #b3b3b3;
+}
+
+footer p {
+	text-align: center;
+}
+
+#tagBeta {
+	padding: 5px;
+	color: #f00;
+	font-style: normal;
+	font-variant: small-caps;
+	border: 1px solid #f00;
+	border-radius: 10px;	
+}
+
+/* things that looks awesome but the code is a mess... */
+
+/* categories images styles */
+
+#categories p {
+	display: none;
+}
+
+#categories {
+	text-align: center;
+}
+
+#categories li {
+	display: inline-flex;
+	width: 200px;
+	height: 230px;
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+
+#catEpidemics {
+	background-image: url('/static/img/icon-epidemics-mono.png');
+}
+
+#catTerrorists {
+	background-image: url('/static/img/icon-terrorists-mono.png');
+}
+
+#catDiseasters {
+	background-image: url('/static/img/icon-natural-disasters-mono.png');
+}
+
+#catPollutions {
+	background-image: url('/static/img/icon-env-pollutions-mono.png');
+}
+
+#catWars {
+	background-image: url('/static/img/icon-wars-mono.png');
+}
+
+#categories li:hover {
+	transition: background-image 0.5s;
+}
+
+#catEpidemics:hover {
+	background-image: url('/static/img/icon-epidemics.png');
+}
+
+#catTerrorists:hover {
+	background-image: url('/static/img/icon-terrorists.png');
+}
+
+#catDiseasters:hover {
+	background-image: url('/static/img/icon-natural-disasters.png');
+}
+
+#catPollutions:hover {
+	background-image: url('/static/img/icon-env-pollutions.png');
+}
+
+#catWars:hover {
+	background-image: url('/static/img/icon-wars.png');
+}
+
+#categories {
+	list-style: none;
+}
+
+/* some media queries */
+@media (max-device-width: 568px) {
+	#content {
+		margin: 0 5% 0 5%;
+	}
+	
+	#categories li {
+		display: inline-block;
+	}
+}
