@@ -16,6 +16,7 @@ Nasza aplikacja nie powstałaby bez kilku bibliotek, które nie są naszą włas
  - Leaflet 
  - Mappa.js 
  - p5 
+ 
  Python(Flask):
  - WTForms
  - SQLAlchemy
